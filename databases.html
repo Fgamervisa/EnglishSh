@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBank - Database Systems</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="MyBank Logo">
+            <h1>MyBank</h1>
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="security.html">Security Center</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="languages.html">Programming Languages</a></li>
+            <li><a href="frontend.html">Frontend Frameworks</a></li>
+            <li><a href="backend.html">Backend Frameworks</a></li>
+            <li><a href="databases.html">Databases</a></li>
+            <li><a href="security.html">Security</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="card">
+            <h2>Database Systems in Banking</h2>
+            <p>Relational databases are crucial for storing and managing banking data securely.</p>
+            
+            <div class="transaction-history">
+                <h3>Example: Transaction History Table</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-10-15</td>
+                            <td>Salary Deposit</td>
+                            <td>Credit</td>
+                            <td class="amount positive">+$3,500.00</td>
+                            <td>$4,250.00</td>
+                        </tr>
+                        <tr>
+                            <td>2023-10-14</td>
+                            <td>Online Purchase - Amazon</td>
+                            <td>Debit</td>
+                            <td class="amount negative">-$85.99</td>
+                            <td>$750.00</td>
+                        </tr>
+                        <tr>
+                            <td>2023-10-13</td>
+                            <td>ATM Withdrawal</td>
+                            <td>Debit</td>
+                            <td class="amount negative">-$200.00</td>
+                            <td>$835.99</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Database Features</h2>
+            <ul>
+                <li><strong>ACID Compliance:</strong> Ensures transaction reliability and data integrity</li>
+                <li><strong>Data Normalization:</strong> Optimizes data storage and prevents redundancy</li>
+                <li><strong>Indexing:</strong> Enables fast data retrieval and query performance</li>
+                <li><strong>Backup Systems:</strong> Maintains data safety through regular backups</li>
+            </ul>
+        </section>
+
+        <nav>
+            <a href="backend.html" class="btn">Previous</a>
+            <a href="security.html" class="btn">Next</a>
+        </nav>
+    </main>
+    <footer>
+        <p>&copy; 2023 MyBank. All rights reserved.</p>
+    </footer>
+</body>
+</html>

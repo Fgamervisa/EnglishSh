@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBank - Features Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="MyBank Logo">
+            <h1>MyBank</h1>
+        </div>
+        <nav class="top-nav">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="security.html">Security Center</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+    <aside class="sidebar">
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="languages.html">Programming Languages</a></li>
+            <li><a href="frontend.html">Frontend Frameworks</a></li>
+            <li><a href="backend.html">Backend Frameworks</a></li>
+            <li><a href="databases.html">Databases</a></li>
+            <li><a href="features.html">Features Demo</a></li>
+            <li><a href="security.html">Security</a></li>
+        </ul>
+    </aside>
+    <main>
+        <!-- Authentication Demo -->
+        <section class="card">
+            <h2>Authentication System</h2>
+            <div class="example">
+                <form id="login-form">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                    <div class="two-factor">
+                        <label for="2fa">2FA Code:</label>
+                        <input type="text" id="2fa" placeholder="Enter code from your authenticator">
+                    </div>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+        </section>
+
+        <!-- Account Management -->
+        <section class="card">
+            <h2>Account Overview</h2>
+            <div class="account-details">
+                <h3>Current Balance</h3>
+                <p class="balance">$12,345.67</p>
+                <div class="account-actions">
+                    <button class="btn">Transfer Money</button>
+                    <button class="btn">Pay Bills</button>
+                    <button class="btn">Mobile Deposit</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Transactions -->
+        <section class="card">
+            <h2>Recent Transactions</h2>
+            <div class="transaction-history">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2023-10-15</td>
+                            <td>Salary Deposit</td>
+                            <td class="amount positive">+$3,500.00</td>
+                            <td>$12,345.67</td>
+                        </tr>
+                        <tr>
+                            <td>2023-10-14</td>
+                            <td>Online Purchase</td>
+                            <td class="amount negative">-$85.99</td>
+                            <td>$8,845.67</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <nav>
+            <a href="databases.html" class="btn">Previous</a>
+            <a href="security.html" class="btn">Next</a>
+        </nav>
+    </main>
+    <footer>
+        <p>&copy; 2023 MyBank. All rights reserved.</p>
+    </footer>
+</body>
+</html>
